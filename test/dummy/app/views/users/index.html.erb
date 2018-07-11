@@ -1,0 +1,17 @@
+<ul>
+  <% @users.each do |u| %>
+  <li>
+    <%= u %>
+    <div>Avatar
+    <% if u.avatar.attached? %>
+      <%= image_tag u.avatar %>
+    <% end %>
+    </div>
+    <div>Photos
+      <% u.photos.each do |photo| %>
+        <%= image_tag photo.variant(resize: "100x100") %>
+      <% end %>
+    </div>
+  </li>
+  <% end %>
+</ul>
