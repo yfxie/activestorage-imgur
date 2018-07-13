@@ -1,5 +1,8 @@
 # ActiveStorage::Imgur
 
+[![Gem Version](https://badge.fury.io/rb/activestorage-imgur.svg)](https://badge.fury.io/rb/activestorage-imgur)
+[![CircleCI](https://circleci.com/gh/yfxie/activestorage-imgur.svg?style=svg)](https://circleci.com/gh/yfxie/activestorage-imgur)
+
 An ActiveStorage driver for storing `images` on [Imgur hosting](https://imgur.com/).
 
 
