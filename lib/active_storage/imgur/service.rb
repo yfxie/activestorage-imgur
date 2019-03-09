@@ -16,7 +16,7 @@ module ActiveStorage
 
       # Upload the +io+ to the +key+ specified. If a +checksum+ is provided, the service will
       # ensure a match when the upload has completed or raise an ActiveStorage::IntegrityError.
-      def upload(key, io, checksum: nil)
+      def upload(key, io, checksum: nil, **)
         instrument :upload, key: key, checksum: checksum do
           if io.is_a?(StringIO)
             io = string_io_to_file(key, io)
